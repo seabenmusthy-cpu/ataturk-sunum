@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atatürk’ün Hayatı ve Mirası</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #eaf3ff;
+    color: #183153;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* GENEL KONTAINER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* BAŞLIKLAR */
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #bcd9ff;
+    padding-bottom: 10px;
+}
+
+/* PARAGRAF */
+p {
+    margin: 15px 0;
+    font-size: 1.15rem;
+    color: #2c3e5c;
+}
+
+/* GÖRSELLER */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 25px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* SOLDAN SLIDE PANEL */
+.slide-in {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    transform: translateX(-500px);
+    animation: slideIn 1s ease forwards;
+    margin: 50px auto;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-500px); opacity: 0; }
+    60% { transform: translateX(20px); }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slide-in p {
+    font-size: 1rem;
+    color: #5e7698;
+}
+
+/* TAM SAYFA SLAYT */
+.full-slide {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eaf3ff, #d8e8ff);
+    margin: 60px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.full-slide h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1b335e;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    p { font-size: 1rem; }
+    .slide-in { padding: 30px 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SOLDAN GELEN PANEL -->
+    <div class="slide-in">
+        <h1>Hoşgeldiniz!</h1>
+        <p>Bu sayfa, Mustafa Kemal Atatürk’ün hayatını ve mirasını anlatan modern bir sunum tarzında hazırlanmıştır. Animasyonlu ve görselli bir deneyim sunar.</p>
+    </div>
+
+    <!-- TAM SAYFA SLAYT -->
+    <div class="full-slide">
+        <h2>Mustafa Kemal Atatürk</h2>
+    </div>
+
+    <!-- BLOG İÇERİK -->
+    <h2 id="dogum">Doğumu ve Eğitim Yılları (1881–1905)</h2>
+    <p>Mustafa Kemal Atatürk, 1881 yılında Selanik’te doğdu. Çocukluğundan itibaren eğitim hayatında başarılı olan Atatürk, mahalle mektebinden sonra Şemsi Efendi Mektebi ve Manastır Askerî Rüştiyesi’nde öğrenim gördü. 1902’de İstanbul’daki Harp Okulu’na girerek askeri eğitimini sürdürdü ve Harp Akademisi’nden mezun oldu.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Atat%C3%BCrk_as_a_alumni_of_Ottoman_Military_Academy%2C_1905.jpg" alt="Genç Atatürk">
+
+    <h2 id="kurtulus">Kurtuluş Savaşı ve Millî Mücadele (1919–1923)</h2>
+    <p>Birinci Dünya Savaşı sonrası Osmanlı toprakları işgaller altındaydı. 1919 yılında Samsun’a çıkan Atatürk, Millî Mücadeleyi başlattı. Erzurum ve Sivas Kongreleri ile ulusal iradeyi örgütledi. 1922’de Yunan ordusunu topraklardan çıkararak zafer kazandı. 1923’te Türkiye Cumhuriyeti ilan edildi.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Atat%C3%BCrk_Tokat%27ta_bir_vatanda%C5%9F%C4%B1_dinliyor_%281930%29.jpg" alt="Kurtuluş Savaşı Atatürk">
+
+    <h2 id="cumhuriyet">Cumhuriyetin İlanı ve Reformlar (1923–1938)</h2>
+    <p>Cumhuriyetin ilanı ile birlikte Atatürk, Türkiye’yi modern bir devlet hâline getirmek için köklü reformlar gerçekleştirdi. Kadınlara seçme ve seçilme hakkı verildi, Latin alfabesi kabul edildi ve eğitim sistemi modernize edildi.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Ataturk1930s.jpg" alt="Cumhuriyet Dönemi Atatürk">
+
+    <h2 id="miras">Liderlik, İlkeler ve Mirası</h2>
+    <p>Atatürk, yalnızca bir devlet kurucusu değil; aynı zamanda bir vizyoner ve öğretmendi. “Yurtta sulh, cihanda sulh” ilkesi ile barışçıl dış politikayı benimsedi. 10 Kasım 1938’de hayata veda etti ancak fikirleri ve reformları günümüzde de yaşamaya devam etmektedir.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Oldest_Known_Photo_Mustafa_Kemal_Atat%C3%BCrk.jpg" alt="Atatürk Miras">
+
+</div>
+</body>
+</html>
